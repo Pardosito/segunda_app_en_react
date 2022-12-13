@@ -1,8 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from "react-router-dom"
 
 // components
-import App from './components/App'
+import Paths from './router'
 
 //styles
 import "bootstrap/dist/css/bootstrap.css"
@@ -13,6 +14,8 @@ const root = createRoot(document.getElementById('root'))
 
 root.render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <Paths />
+    </BrowserRouter>
   </StrictMode>
 )
